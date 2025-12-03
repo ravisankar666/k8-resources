@@ -17,7 +17,7 @@ spec:
    template:
       metadata:
          labels:
-            purpose: re-demo
+            purpose: rs-demo
             project: roboshop
       spec:
          containers:
