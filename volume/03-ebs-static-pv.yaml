@@ -45,4 +45,4 @@ spec:
   volumes:
   - name: nginx-html
     persistentVolumeClaim:
-      claimName: test-pv    
+      claimName: ebs-claim   
