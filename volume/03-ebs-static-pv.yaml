@@ -1,0 +1,16 @@
+# creating PV is k8 admin job
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: test-pv
+spec:
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain       #retain mean don't delete data , recycle mean delete data don't delete disk , deletemean delete the disk.
+  capacity:
+    storage: 15Gi
+  csi:
+    driver: ebs.csi.aws.com
+    fsType: ext4
+    volumeHandle: vpc-02070a621ae1df85d
+ 
