@@ -29,6 +29,8 @@ kind: Service
 metadata:
    name: nginx
 spec: 
+# if a service clusterIP then it is called as headless service
+  clusterIP: None
   selector:
      purpose: headless-svc-demo
      project: roboshop
